@@ -560,7 +560,7 @@
     }
 
     .row-cols-lg-2 > * {
-        --row-cols-number: 1;
+        --row-cols-number: 2;
     }
 
     .row-cols-lg-3 > * {
