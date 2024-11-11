@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>F8 Project Challenge 04</title>
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- Embed Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Style -->
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+    </head>
+    <body>
+        <!-- PC Header -->
+        <header class="header">
+            <div class="secondary-container">
+                <div class="header__inner separate">
+                    <div class="header__mail">
+                        <div class="header__mail-icon">
+                            <a href="#!"
+                                ><img
+                                    src="./assets/img/mail-icon.svg"
+                                    alt=""
+                                    class="header__mail-img"
+                            /></a>
+                        </div>
+                        <!-- Toggle Menu Mobile -->
+                        <label for="menu-checkbox" class="toggle-menu">
+                            <img
+                                src="/assets/img/toggle-menu-icon.svg"
+                                alt=""
+                                class="show-on-mobile"
+                            />
+                        </label>
+                        <a href="#!" class="header__mail-link">
+                            hi@arif.interactive
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="#!">
+                            <img
+                                src="./assets/img/logo-icon.svg"
+                                alt="Interactive"
+                                class="logo__img"
+                            />
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul id="pc-nav" class="nav__list">
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Projects</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Journey</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Service</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Tablet/Mobile Header -->
+        <header class="mobile-header show-on-mobile">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="menu-drawer">
+                <a href="#!" class="menu-drawer__text-mail">
+                    hi@arif.interactive
+                </a>
+                <nav class="nav nav-on-mobile">
+                    <ul
+                        id="mobile-nav"
+                        class="nav__list nav__list-on-mobile"
+                    ></ul>
+                </nav>
+                <script>
+                    const pcNav = document.querySelector("#pc-nav");
+                    const mobileNav = document.querySelector("#mobile-nav");
+                    //Copy pc-nav -> mobile-nav
+                    mobileNav.innerHTML = pcNav.innerHTML;
+                </script>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="row hero__row">
+                    <div class="col-lg-6 col-12 hero__order-mobile">
+                        <figure class="hero__media">
+                            <img
+                                src="./assets/img/hero-people.png"
+                                alt=""
+                                class="hero__img-people"
+                            />
+                            <img
+                                src="./assets/img/hero-decor-left.svg"
+                                alt=""
+                                class="hero__decor-bg-left"
+                            />
+                        </figure>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 col-12">
+                        <div class="hero__content">
+                            <h1 class="hero__heading">
+                                An Interactive Designer
+                            </h1>
+                            <p class="section-desc hero__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                            <div class="hero__ata">
+                                <a href="#!" class="btn">Book a Call</a>
+                                <a href="#!" class="btn-link">My Works</a>
+                            </div>
+                            <div class="social">
+                                <p class="social__text">Follow me on:</p>
+                                <div class="social__wrap">
+                                    <a href="#!" class="social__btn"
+                                        ><img
+                                            src="./assets/img/be-icon.svg"
+                                            alt=""
+                                    /></a>
+                                    <a href="#!" class="social__btn"
+                                        ><img
+                                            src="./assets/img/word-icon.svg"
+                                            alt=""
+                                    /></a>
+                                    <a href="#!" class="social__btn"
+                                        ><img
+                                            src="./assets/img/insta-icon.svg"
+                                            alt=""
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="./assets/img/hero-decor-right.svg"
+                alt=""
+                class="hero__decor-bg-right"
+            />
+        </section>
+        <!-- Main -->
+        <main class="main">
+            <!-- Clients -->
+            <section class="client">
+                <div class="container">
+                    <div class="row">
+                        <div class="client__heading-wrap">
+                            <div class="col-lg-4">
+                                <h2 class="section-heading client__heading">
+                                    Meet my recent clients
+                                </h2>
+                            </div>
+
+                            <div class="col-lg-8">
+                                <div class="client__list">
+                                    <img
+                                        src="./assets/img/clients/google.svg"
+                                        alt="Google"
+                                        class="client__item"
+                                    />
+                                    <img
+                                        src="./assets/img/clients/wb.svg"
+                                        alt="Google"
+                                        class="client__item"
+                                    />
+                                    <img
+                                        src="./assets/img/clients/maichimp.svg"
+                                        alt="Google"
+                                        class="client__item"
+                                    />
+                                    <img
+                                        src="./assets/img/clients/adobe.svg"
+                                        alt="Google"
+                                        class="client__item"
+                                    />
+                                    <img
+                                        src="./assets/img/clients/upwork.svg"
+                                        alt="Google"
+                                        class="client__item"
+                                    />
+                                    <img
+                                        src="./assets/img/clients/creative-cloude.svg"
+                                        alt="Google"
+                                        class="client__item"
+                                    />
+                                    <img
+                                        src="./assets/img/clients/Woocommercde.svg"
+                                        alt="Google"
+                                        class="client__item"
+                                    />
+                                    <img
+                                        src="./assets/img/clients/canva.svg"
+                                        alt="Google"
+                                        class="client__item"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Special -->
+            <section class="special">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="section-heading special__heading">
+                                Specialties
+                            </h2>
+                            <p class="section-desc special__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row row-cols-lg-3 row-cols-1 special__list">
+                        <div class="col">
+                            <div class="special__item">
+                                <div class="special__icon">
+                                    <img
+                                        src="./assets/img/special-icon-01.png"
+                                        alt=""
+                                        class="special__img"
+                                    />
+                                </div>
+                                <h3 class="special__title">Product design</h3>
+                                <p class="special__text">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="special__item">
+                                <div class="special__icon">
+                                    <img
+                                        src="./assets/img/special-icon-02.svg"
+                                        alt=""
+                                        class="special__img"
+                                    />
+                                </div>
+                                <h3 class="special__title">UI/UX Design</h3>
+                                <p class="special__text">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="special__item">
+                                <div class="special__icon">
+                                    <img
+                                        src="./assets/img/special-icon-03.png"
+                                        alt=""
+                                        class="special__img"
+                                    />
+                                </div>
+                                <h3 class="special__title">
+                                    Interactive design
+                                </h3>
+                                <p class="special__text">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots show-on-mobile">
+                        <div class="dot"></div>
+                        <div class="dot dot--active"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- My Project -->
+            <section class="project">
+                <div class="container">
+                    <div class="row project__row">
+                        <div class="col-lg-5">
+                            <h2 class="section-heading project__heading">
+                                Take a look at my recent projects
+                            </h2>
+                        </div>
+                        <div class="col-lg-6 offset-lg-1">
+                            <p class="section-desc project__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row row-cols-lg-2 row-cols-1 project__list">
+                        <div class="col">
+                            <article class="project__item">
+                                <div class="project__info">
+                                    <h3 class="project__name">Wally Website</h3>
+                                    <p class="project__info-desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a
+                                        href="#!"
+                                        class="btn-link project__btn-link"
+                                        >Case Study
+                                    </a>
+                                </div>
+                                <img
+                                    src="./assets/img/project-01.png"
+                                    alt=""
+                                    class="project__img"
+                                />
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="project__item">
+                                <div class="project__info">
+                                    <h3 class="project__name">Banking App</h3>
+                                    <p class="project__info-desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a
+                                        href="#!"
+                                        class="btn-link project__btn-link"
+                                        >Case Study
+                                    </a>
+                                </div>
+                                <img
+                                    src="./assets/img/project-02.png"
+                                    alt=""
+                                    class="project__img"
+                                />
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="project__item">
+                                <div class="project__info">
+                                    <h3 class="project__name">Web App</h3>
+                                    <p class="project__info-desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a
+                                        href="#!"
+                                        class="btn-link project__btn-link"
+                                        >Case Study
+                                    </a>
+                                </div>
+                                <img
+                                    src="./assets/img/project-03.png"
+                                    alt=""
+                                    class="project__img"
+                                />
+                            </article>
+                        </div>
+                        <div class="col">
+                            <article class="project__item">
+                                <div class="project__info">
+                                    <h3 class="project__name">
+                                        Oculus Website
+                                    </h3>
+                                    <p class="project__info-desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a
+                                        href="#!"
+                                        class="btn-link project__btn-link"
+                                        >Case Study
+                                    </a>
+                                </div>
+                                <img
+                                    src="./assets/img/project-04.png"
+                                    alt=""
+                                    class="project__img"
+                                />
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#!" class="btn project__btn">
+                                All Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Video -->
+            <section class="video">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="video__welcome-wrap">
+                                <p class="video__welcome-text">
+                                    Hey,,,,It’s Arif
+                                </p>
+                                <img
+                                    src="./assets/img/icon-hi.svg"
+                                    alt=""
+                                    class="video__icon-hi"
+                                />
+                            </div>
+                            <h2 class="section-heading video__heading">
+                                Interactive Designer
+                            </h2>
+                            <p class="section-desc video__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="stats">
+                                <div class="stats__item">
+                                    <strong class="stats__number">08+</strong>
+                                    <span class="stats__text"
+                                        >Years Experience</span
+                                    >
+                                </div>
+                                <div class="stats__item">
+                                    <strong class="stats__number">21+</strong>
+                                    <span class="stats__text"
+                                        >Features & Awards</span
+                                    >
+                                </div>
+                                <div class="stats__item">
+                                    <strong class="stats__number">97%</strong>
+                                    <span class="stats__text"
+                                        >Clients Rating</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="video-thumbnail">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/video-thumbnail.png"
+                                        alt=""
+                                        class="video-thumbnail__img"
+                                    />
+                                </a>
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/play-icon.svg"
+                                        alt=""
+                                        class="video-thumbnail__play-icon"
+                                    />
+                                </a>
+                                <a href="#!" class="btn video-thumbnail__btn"
+                                    >Intro Video</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Review -->
+            <section class="review">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="section-heading review-heading">
+                                What people says
+                            </h2>
+                            <p class="section-desc review-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="review__content">
+                                <div class="container">
+                                    <div class="review__list">
+                                        <!-- Review item 1 -->
+                                        <article class="review__item">
+                                            <blockquote class="review__quote">
+                                                “Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum dolore eu fugiat
+                                                nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident,
+                                                sunt in culpa.”
+                                            </blockquote>
+                                            <div class="review__info">
+                                                <div class="review__profile">
+                                                    <div class="review__avatar">
+                                                        <img
+                                                            src="./assets/img/review-people-01.png"
+                                                            alt=""
+                                                            class="review__ava-img"
+                                                        />
+                                                        <div
+                                                            class="review__name"
+                                                        >
+                                                            John Doe
+                                                        </div>
+                                                    </div>
+                                                    <p
+                                                        class="review__profile-decs"
+                                                    >
+                                                        User Interface Design at
+                                                        PCL Lab
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Review item 2 -->
+                                        <article class="review__item">
+                                            <blockquote class="review__quote">
+                                                “Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum dolore eu fugiat
+                                                nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident,
+                                                sunt in culpa.”
+                                            </blockquote>
+                                            <div class="review__info">
+                                                <div class="review__profile">
+                                                    <div class="review__avatar">
+                                                        <img
+                                                            src="./assets/img/review-people-01.png"
+                                                            alt=""
+                                                            class="review__ava-img"
+                                                        />
+                                                        <div
+                                                            class="review__name"
+                                                        >
+                                                            John Doe
+                                                        </div>
+                                                    </div>
+                                                    <p
+                                                        class="review__profile-decs"
+                                                    >
+                                                        User Interface Design at
+                                                        PCL Lab
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Review item 3 -->
+                                        <article class="review__item">
+                                            <blockquote class="review__quote">
+                                                “Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum dolore eu fugiat
+                                                nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident,
+                                                sunt in culpa.”
+                                            </blockquote>
+                                            <div class="review__info">
+                                                <div class="review__profile">
+                                                    <div class="review__avatar">
+                                                        <img
+                                                            src="./assets/img/review-people-01.png"
+                                                            alt=""
+                                                            class="review__ava-img"
+                                                        />
+                                                        <div
+                                                            class="review__name"
+                                                        >
+                                                            John Doe
+                                                        </div>
+                                                    </div>
+                                                    <p
+                                                        class="review__profile-decs"
+                                                    >
+                                                        User Interface Design at
+                                                        PCL Lab
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Review item 4 -->
+                                        <article class="review__item">
+                                            <blockquote class="review__quote">
+                                                “Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum dolore eu fugiat
+                                                nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident,
+                                                sunt in culpa.”
+                                            </blockquote>
+                                            <div class="review__info">
+                                                <div class="review__profile">
+                                                    <div class="review__avatar">
+                                                        <img
+                                                            src="./assets/img/review-people-01.png"
+                                                            alt=""
+                                                            class="review__ava-img"
+                                                        />
+                                                        <div
+                                                            class="review__name"
+                                                        >
+                                                            John Doe
+                                                        </div>
+                                                    </div>
+                                                    <p
+                                                        class="review__profile-decs"
+                                                    >
+                                                        User Interface Design at
+                                                        PCL Lab
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Review item 5 -->
+                                        <article class="review__item">
+                                            <blockquote class="review__quote">
+                                                “Duis aute irure dolor in
+                                                reprehenderit in voluptate velit
+                                                esse cillum dolore eu fugiat
+                                                nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident,
+                                                sunt in culpa.”
+                                            </blockquote>
+                                            <div class="review__info">
+                                                <div class="review__profile">
+                                                    <div class="review__avatar">
+                                                        <img
+                                                            src="./assets/img/review-people-01.png"
+                                                            alt=""
+                                                            class="review__ava-img"
+                                                        />
+                                                        <div
+                                                            class="review__name"
+                                                        >
+                                                            John Doe
+                                                        </div>
+                                                    </div>
+                                                    <p
+                                                        class="review__profile-decs"
+                                                    >
+                                                        User Interface Design at
+                                                        PCL Lab
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot dot--active"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Q&A -->
+            <section class="questions">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="section-heading questions__heading">
+                                A few questions clients normally ask me
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="questions__list">
+                                <div class="questions__item">
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id="questions__checkbox-01"
+                                        class="questions__checkbox"
+                                        hidden
+                                    />
+                                    <div class="questions__head">
+                                        <h3 class="questions__title">
+                                            What is your hourly rate?
+                                        </h3>
+                                        <label
+                                            for="questions__checkbox-01"
+                                            class="questions__label"
+                                        >
+                                            <div class="questions__btn-wrap">
+                                                <img
+                                                    src="./assets/img/icon-plus.svg"
+                                                    alt=""
+                                                    class="questions__btn-plus"
+                                                />
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <p class="questions__content">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </div>
+                                <div class="questions__item">
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id="questions__checkbox-02"
+                                        class="questions__checkbox"
+                                        hidden
+                                    />
+                                    <div class="questions__head">
+                                        <h3 class="questions__title">
+                                            What type of projects do you take
+                                            on?
+                                        </h3>
+                                        <label
+                                            for="questions__checkbox-02"
+                                            class="questions__label"
+                                        >
+                                            <div class="questions__btn-wrap">
+                                                <img
+                                                    src="./assets/img/icon-plus.svg"
+                                                    alt=""
+                                                    class="questions__btn-plus"
+                                                />
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <p class="questions__content">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </div>
+                                <div class="questions__item">
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id="questions__checkbox-03"
+                                        class="questions__checkbox"
+                                        hidden
+                                    />
+                                    <div class="questions__head">
+                                        <h3 class="questions__title">
+                                            How do you charge for projects ?
+                                        </h3>
+                                        <label
+                                            for="questions__checkbox-03"
+                                            class="questions__label"
+                                        >
+                                            <div class="questions__btn-wrap">
+                                                <img
+                                                    src="./assets/img/icon-plus.svg"
+                                                    alt=""
+                                                    class="questions__btn-plus"
+                                                />
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <p class="questions__content">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </div>
+                                <div class="questions__item">
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id="questions__checkbox-04"
+                                        class="questions__checkbox"
+                                        hidden
+                                    />
+                                    <div class="questions__head">
+                                        <h3 class="questions__title">
+                                            What time-zone do you work in?
+                                        </h3>
+                                        <label
+                                            for="questions__checkbox-04"
+                                            class="questions__label"
+                                        >
+                                            <div class="questions__btn-wrap">
+                                                <img
+                                                    src="./assets/img/icon-plus.svg"
+                                                    alt=""
+                                                    class="questions__btn-plus"
+                                                />
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <p class="questions__content">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </div>
+                                <div class="questions__item">
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id="questions__checkbox-05"
+                                        class="questions__checkbox"
+                                        hidden
+                                    />
+                                    <div class="questions__head">
+                                        <h3 class="questions__title">
+                                            How often can we communicate?
+                                        </h3>
+                                        <label
+                                            for="questions__checkbox-05"
+                                            class="questions__label"
+                                        >
+                                            <div class="questions__btn-wrap">
+                                                <img
+                                                    src="./assets/img/icon-plus.svg"
+                                                    alt=""
+                                                    class="questions__btn-plus"
+                                                />
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <p class="questions__content">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Gallery -->
+            <section class="gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="section-heading gallery__heading">
+                                My atmosphere
+                            </h2>
+                            <p class="section-desc gallery__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                            <a href="#!" class="gallery__mail-text"
+                                >@interaction_arif</a
+                            >
+                        </div>
+                    </div>
+                    <div class="row row-cols-lg-3 row-cols-1 gallery__list">
+                        <div class="col">
+                            <img
+                                src="./assets/img/gallery-01.png"
+                                alt=""
+                                class="gallery__img"
+                            />
+                        </div>
+                        <div class="col">
+                            <img
+                                src="./assets/img/gallery-02.png"
+                                alt=""
+                                class="gallery__img"
+                            />
+                        </div>
+                        <div class="col">
+                            <img
+                                src="./assets/img/gallery-03.png"
+                                alt=""
+                                class="gallery__img"
+                            />
+                        </div>
+                    </div>
+                    <div class="dots show-on-mobile">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot dot--active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call Action -->
+            <section class="action">
+                <div class="secondary-container">
+                    <div class="action__wrap">
+                        <div class="action__content">
+                            <img
+                                src="./assets/img/emoji-01.png"
+                                alt=""
+                                class="action__emoji"
+                            />
+                            <h2 class="section-heading action__heading">
+                                Got a project? Let’s talk
+                            </h2>
+                            <p class="section-desc action__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                            <a href="#!" class="btn action__btn">Book a Call</a>
+                        </div>
+                        <div class="action__decor">
+                            <img
+                                src="./assets/img/action-decor-center.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="mobile-display footer">
+            <div class="secondary-container">
+                <div class="mobile-display header__inner separate">
+                    <div class="mobile-display header__mail">
+                        <div class="header__mail-icon">
+                            <a href="#!"
+                                ><img
+                                    src="./assets/img/mail-icon.svg"
+                                    alt=""
+                                    class="header__mail-img"
+                            /></a>
+                        </div>
+                        <a href="#!" class="mobile-display header__mail-link">
+                            hi@arif.interactive
+                        </a>
+                    </div>
+                    <div class="mobile-display logo">
+                        <a href="#!">
+                            <img
+                                src="./assets/img/logo-icon.svg"
+                                alt="Interactive"
+                                class="logo__img"
+                            />
+                        </a>
+                    </div>
+                    <nav class="mobile-display nav">
+                        <ul id="pc-nav" class="nav__list">
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Projects</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Journey</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Service</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="copyright__inner">
+                    <p class="copyright__text">
+                        ©interactiveArif 2021. All rights reserved.
+                    </p>
+                    <div class="copyright__policy">
+                        <p class="copyright__policy-text">Privacy Policy</p>
+                        <div class="copyright__separate"></div>
+                        <p class="copyright__policy-text">
+                            Terms of Conditions
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Lấy các phần tử cần thiết
+                const checkbox = document.querySelector(".questions__checkbox");
+                const img = document.querySelector(".questions__btn-plus");
+
+                // Thêm sự kiện khi checkbox thay đổi
+                checkbox.addEventListener("change", function () {
+                    if (checkbox.checked) {
+                        // Nếu checkbox được chọn, thay đổi src thành icon trừ
+                        img.src = "./assets/img/icon-apart.svg";
+                    } else {
+                        // Nếu checkbox không được chọn, quay lại icon cộng
+                        img.src = "./assets/img/icon-plus.svg";
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
